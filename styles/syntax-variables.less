@@ -1,9 +1,15 @@
 // This defines all syntax variables that syntax themes must implement when they
 // include a syntax-variables.less file.
 
+// Initialize @base-color. Just in case.
+@base-color: #009688;
+
+// Overwrite @base-color with the one from Material UI theme.
+@import "ui-variables";
+
 // General colors
 @syntax-text-color: darken(#AABBC3, 5%);
-@syntax-cursor-color: @md-teal-300;
+@syntax-cursor-color: @base-color;
 @syntax-selection-color: fade(@syntax-text-color, 15%);
 @syntax-background-color: #212121;
 @syntax-comments-color: #444;
