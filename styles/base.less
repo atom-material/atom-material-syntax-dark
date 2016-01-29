@@ -410,3 +410,9 @@ atom-text-editor.is-focused, :host(.is-focused) {
 .support.type.sys-types {
     color: #ffcb6b;
 }
+.bracket-matcher .region {
+    border-bottom: 1px solid @syntax-cursor-color;
+    box-sizing: border-box;
+    background-color: lighten(@syntax-background-color, 5%);
+    box-shadow: inset 0 -1px 0 @syntax-cursor-color;
+}
